@@ -1,0 +1,130 @@
+body {
+  font-family: system-ui;
+  background-color: grey;
+  color: white;
+}
+p {
+  font-size: 1.5em;
+  text-align: justify;
+  font-family: "Garamond";
+}
+
+/* STYLES FOR BUTTON */
+#btn {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}
+#btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid grey;
+}
+/* SET BORDER FOR MAIN SECTION */
+.mainContainer {
+  padding: 2em 2em 2em 2em;
+  background-color: black;
+  text-align: center;
+}
+img {
+  border: 0.5em solid white;
+}
+
+h1 {
+  font-size: 6em;
+  animation-name: colorChange;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+  font-family: "Roboto";
+}
+h1:hover {
+  color: black;
+  text-shadow: 4px 4px 4px white;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.5em;
+  font-family: "Roboto";
+}
+h3 {
+  font-size: 2em;
+}
+/* CAST SECTION STYLES */
+
+.row {
+  display: flex;
+  max-width: 100%;
+  overflow: auto;
+}
+.column {
+  padding: 1vh;
+}
+.column img {
+  height: 60vh;
+  width: 60vh;
+}
+.column p {
+  padding: 0.5em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.column p:hover {
+  color: red;
+}
+
+/* TRIVIA SECTION STYLES */
+
+ul {
+  list-style-type: square;
+}
+li {
+  text-align: justify;
+  font-size: 1.5em;
+  line-height: 1.7em;
+}
+
+/* FOOTER STYLES */
+footer p {
+  text-align: center;
+}
+footer a {
+  color: white;
+}
+
+/* ANIMATIONS SECTION */
+
+@keyframes colorChange {
+  0% {
+    color: grey;
+    text-shadow: 3px 3px 3px white;
+  }
+  25% {
+    color: black;
+    text-shadow: 3px 3px 3px white;
+  }
+  50% {
+    color: grey;
+    text-shadow: 3px 3px 3px white;
+  }
+  75% {
+    color: grey;
+    text-shadow: 3px 3px 3px white;
+  }
+  100% {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+  }
+}
+
+/* MEDIA QUERY SECTION*/
+@media only screen and (max-width: 768px) {
+  .mainContainer {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+}
